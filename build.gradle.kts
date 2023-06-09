@@ -3,6 +3,11 @@ import org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.compose)
+    alias(libs.plugins.detekt)
+}
+
+dependencies {
+    detektPlugins(libs.plugins.detekt.rules.compose.get().toString())
 }
 
 repositories {

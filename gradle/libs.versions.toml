@@ -1,7 +1,11 @@
 [versions]
 kotlin = "1.8.20"
 compose = "1.4.0"
+detekt = "1.23.0"
+detekt-rules-compose = "1.2.2"
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+detekt-rules-compose = { id = "ru.kode:detekt-rules-compose", version.ref = "detekt-rules-compose" }
