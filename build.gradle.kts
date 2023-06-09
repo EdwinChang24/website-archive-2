@@ -38,4 +38,3 @@ afterEvaluate {
         versions.webpackCli.version = "4.10.0"
     }
 }
-
