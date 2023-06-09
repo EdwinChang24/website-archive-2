@@ -21,7 +21,7 @@ kotlin {
         browser()
         binaries.executable()
     }
-    sourceSets {
+    @Suppress("UNUSED_VARIABLE") sourceSets {
         val jsMain by getting {
             kotlin.srcDir("src/main/kotlin")
             resources.srcDir("src/main/resources")
