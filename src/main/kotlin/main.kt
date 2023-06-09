@@ -1,4 +1,8 @@
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import org.jetbrains.compose.web.dom.Button
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Text
@@ -14,15 +18,13 @@ fun main() {
 fun Body() {
     var counter by remember { mutableStateOf(0) }
     Div {
-        Text("Clicked: ${counter}")
+        Text("Clicked: $counter")
     }
-    Button(
-        attrs = {
-            onClick { _ ->
-                counter++
-            }
+    Button(attrs = {
+        onClick { _ ->
+            counter++
         }
-    ) {
+    }) {
         Text("Click")
     }
 }
