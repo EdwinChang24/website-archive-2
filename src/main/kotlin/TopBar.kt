@@ -35,7 +35,7 @@ fun TopBar() = Div(attrs = {
 }) {
     Span(attrs = {
         style {
-            fontSize(1.2.cssRem)
+            fontSize(1.4.cssRem)
         }
     }) {
         Text("Edwin Chang")

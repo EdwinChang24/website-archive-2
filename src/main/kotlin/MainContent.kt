@@ -34,7 +34,7 @@ fun MainContent() {
         style {
             gridColumn(start = 2, end = 4)
             gridRow(start = 3, end = 4)
-            fontSize(1.2.cssRem)
+            fontSize(1.6.cssRem)
         }
     }) {
         Text("I'm a software developer interested in the latest tech out there.")
