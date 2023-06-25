@@ -4,6 +4,7 @@ import org.jetbrains.compose.web.css.Position
 import org.jetbrains.compose.web.css.display
 import org.jetbrains.compose.web.css.fontFamily
 import org.jetbrains.compose.web.css.fontWeight
+import org.jetbrains.compose.web.css.gridTemplateColumns
 import org.jetbrains.compose.web.css.gridTemplateRows
 import org.jetbrains.compose.web.css.height
 import org.jetbrains.compose.web.css.left
@@ -30,7 +31,8 @@ fun Body() = Div(attrs = {
         height(100.percent)
         width(100.percent)
         display(DisplayStyle.Grid)
-        gridTemplateRows("auto 2fr 1fr auto")
+        gridTemplateRows("auto 3fr 2fr auto")
+        gridTemplateColumns("minmax(50px, auto) auto auto minmax(50px, auto)")
         fontFamily("Inter", "system-ui")
         fontWeight(value = 450)
     }

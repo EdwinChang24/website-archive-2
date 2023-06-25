@@ -1,4 +1,6 @@
 import androidx.compose.runtime.Composable
+import org.jetbrains.compose.web.css.AlignSelf
+import org.jetbrains.compose.web.css.alignSelf
 import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.fontSize
 import org.jetbrains.compose.web.css.fontWeight
@@ -6,16 +8,18 @@ import org.jetbrains.compose.web.css.gridColumn
 import org.jetbrains.compose.web.css.gridRow
 import org.jetbrains.compose.web.dom.Br
 import org.jetbrains.compose.web.dom.P
+import org.jetbrains.compose.web.dom.Span
 import org.jetbrains.compose.web.dom.Text
 
 @Composable
 fun MainContent() {
-    P(attrs = {
+    Span(attrs = {
         style {
             gridColumn(start = 2, end = 3)
             gridRow(start = 2, end = 3)
             fontSize(6.cssRem)
             fontWeight(value = 600)
+            alignSelf(AlignSelf.End)
         }
     }) {
         Text("Hi,")
@@ -26,6 +30,7 @@ fun MainContent() {
         style {
             gridColumn(start = 3, end = 4)
             gridRow(start = 2, end = 3)
+            alignSelf(AlignSelf.End)
         }
     }) {
         Text("picture")
